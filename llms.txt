@@ -1,0 +1,30 @@
+# Glycéo
+
+> Glycéo is a free Android app (coming soon on Google Play) that scans food barcodes and shows the estimated glycemic index (GI) and the glycemic load (GL) for the portion you actually eat. No account, no ads, no in-app purchases; all personal data stays on the phone. Available in French, Arabic, English and Spanish. Mascot: Pépin, a friendly clay pea. Published by Neami Labs (France), contact@glyceo.app.
+
+Glycéo is a nutrition information tool, not a medical device: it does not diagnose, does not calculate insulin or medication doses and does not replace a doctor or dietitian. GI values are estimates based on published scientific tables (e.g. Atkinson et al., International GI tables).
+
+## Features (V1.1)
+- Scan: barcode lookup in an open food database; if a product is missing, the user can copy the label and it is still calculated.
+- Understand: estimated GI and GL per portion, shown with simple colours (low, moderate, high). GI low ≤ 55, moderate 56–69, high ≥ 70. GL = GI × carbohydrates of the portion (g) / 100.
+- Daily load: meals add up in a daily glycemic load gauge with a guide value of 80.
+- Shopping list ("Mes courses"): tile-based list of 500+ illustrated items sorted by store aisle, each with its estimated GI, seasonal fruit and vegetables, quick add, gentle swap ideas.
+- My plate: estimates the glycemic load of a whole meal, not just one product.
+- Compare and swap: compare two products in store and find gentler alternatives from the same aisle.
+- Alerts: hidden sugars, allergies, pork-free, alcohol-free ingredient checks at every scan.
+- Did you know?: one true-or-false card a day about what raises blood sugar.
+- Personal log: scan and meal history, weight tracking with BMI shown on a WHO-zone gauge.
+
+## Who it is for
+Adults who want to understand how meals affect blood sugar: type 1 or type 2 diabetes, prediabetes, gestational diabetes, caregivers, or curious people. Minors should use it with a responsible adult and their doctor.
+
+## Privacy
+No Glycéo server, no account, no ads, no analytics, no trackers. The only network request is a product lookup in Open Food Facts (barcode or search term, never personal or health data).
+
+## Pages
+- [Accueil (français)](https://glyceo.app/): présentation de l'app
+- [Home (English)](https://glyceo.app/en/): app overview
+- [Inicio (español)](https://glyceo.app/es/): presentación
+- [الصفحة الرئيسية (العربية)](https://glyceo.app/ar/): تقديم التطبيق
+- [Politique de confidentialité](https://glyceo.app/confidentialite.html) · [Privacy policy](https://glyceo.app/en/privacy.html)
+- [Conditions et mentions légales](https://glyceo.app/conditions.html) · [Terms](https://glyceo.app/en/terms.html)

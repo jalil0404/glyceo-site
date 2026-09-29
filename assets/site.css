@@ -46,6 +46,14 @@ h2.section-title{font-size:clamp(26px,3.4vw,34px);letter-spacing:-.6px;margin:0 
 .privacy-card a{color:var(--gold);font-weight:800}
 .note{display:flex;gap:12px;align-items:flex-start;background:var(--amber);color:#4A3A22;border-radius:22px;padding:16px 18px;font-size:15px}
 .note img{width:40px;height:40px;border-radius:12px;flex-shrink:0}
+.faq{display:flex;flex-direction:column;gap:10px}
+.faq details{background:var(--card);border-radius:22px;padding:0 20px}
+.faq summary{cursor:pointer;list-style:none;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:800;font-size:18px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:"Grandstander",sans-serif;font-size:24px;color:var(--green);flex-shrink:0}
+.faq details[open] summary::after{content:"−"}
+.faq summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:8px}
+.faq details p{margin:0 0 18px;color:var(--ink-soft)}
 footer{margin:56px 0 0;padding:28px 0 40px;border-top:1.5px solid var(--line);font-size:14px;color:var(--ink-soft)}
 footer nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:10px}
 footer nav a{color:var(--ink);font-weight:700}
