@@ -32,7 +32,8 @@ header.top{display:flex;align-items:center;justify-content:space-between;gap:12p
 .btn[aria-disabled=true]{opacity:.9;cursor:default}
 .btn .dot{width:10px;height:10px;border-radius:5px;background:var(--gold)}
 section{margin:48px 0}
-h2.section-title{font-size:clamp(26px,3.4vw,34px);letter-spacing:-.6px;margin:0 0 20px}
+h2.section-title{font-size:clamp(26px,3.4vw,34px);letter-spacing:-.6px;margin:0 0 8px}
+.intro{margin:0 0 20px;color:var(--ink-soft);font-size:18px;max-width:60ch}
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .feature{background:var(--card);border-radius:28px;padding:16px 16px 22px}
 .feature img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:22px;display:block}
