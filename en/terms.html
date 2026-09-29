@@ -20,6 +20,11 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://glyceo.app/en/terms.html">
 <link rel="stylesheet" href="../assets/site.css">
+<script>
+/* Mesure d'audience anonyme, sans cookie (GoatCounter). Rien n'est compté si le navigateur envoie Do Not Track / GPC ou si le visiteur a refusé. */
+(function(){try{if(navigator.doNotTrack==="1"||navigator.globalPrivacyControl||localStorage.getItem("skipgc")==="t")return}catch(e){}
+var s=document.createElement("script");s.async=true;s.src="https://gc.zgo.at/count.js";s.setAttribute("data-goatcounter","https://glyceo.goatcounter.com/count");document.head.appendChild(s)})();
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -36,6 +41,12 @@
 <section class="part"><h2>Legal notice</h2><p><strong>Publisher</strong>: Abdeljalil NEAMI (Neami Labs), private individual, France. Contact: <a href="mailto:contact@glyceo.app">contact@glyceo.app</a>.<br><strong>Publication director</strong>: Abdeljalil NEAMI.<br><strong>Website host</strong>: GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States.<br><strong>App distribution</strong>: Google Play.</p></section><section class="part"><h2>Purpose</h2><p>Glycéo is a free app that helps you understand how food affects blood glucose: estimated glycemic index, glycemic load for a portion, alternatives and tips, and, if you wish, a personal log. By using the app, you accept these terms.</p></section><section class="part"><h2>Estimates, not certainties</h2><p>The glycemic index is estimated from published tables and the product's composition. The glycemic load is calculated for the portion you enter. These values are for information only: they vary with preparation, the meal and each person.</p></section><section class="part"><h2>Product data</h2><p>Product information comes from <a href="https://world.openfoodfacts.org" rel="noopener">Open Food Facts</a>, a collaborative database. It may be incomplete or inaccurate. <strong>Always check the label</strong>, especially if you have an allergy. Data © Open Food Facts contributors, under the ODbL licence; photos under the CC BY-SA licence.</p></section><section class="part"><h2>A free service, provided as is</h2><p>Glycéo is free, with no ads and no in-app purchases. It is provided "as is", without any guarantee of permanent availability or of being error-free. It may change, be updated or be discontinued.</p></section><section class="part"><h2>Liability</h2><p>To the extent permitted by law, the publisher cannot be held liable for decisions made solely on the basis of information in the app, nor for any unavailability of the service or of Open Food Facts data. Nothing in these terms limits the rights the law grants you as a consumer.</p></section><section class="part"><h2>Proper use</h2><p>The app is for personal use. You agree not to misuse it, copy it for resale or try to disrupt it.</p></section><section class="part"><h2>Intellectual property</h2><p>The Glycéo name, the Pépin character, the illustrations and the app's code belong to their author. The fonts used are under the SIL Open Font License. Open Food Facts data and photos remain under their respective licences.</p></section><section class="part"><h2>Your data</h2><p>Your data stays on your phone. Everything is explained in the <a href="privacy.html">privacy policy</a>.</p></section><section class="part"><h2>Governing law</h2><p>These terms are governed by French law. As a consumer, you keep the protection of the mandatory rules of your country of residence. If you have a question or disagreement, please write first to <a href="mailto:contact@glyceo.app">contact@glyceo.app</a>.</p></section>
 <a class="back" href="../en/index.html">← Back to home</a>
 </article>
+<script>
+(function(){var b=document.getElementById("gc-optout");if(!b)return;
+function on(){try{return localStorage.getItem("skipgc")==="t"}catch(e){return false}}
+function show(){b.textContent=on()?b.dataset.on:b.dataset.off}
+b.addEventListener("click",function(){try{on()?localStorage.removeItem("skipgc"):localStorage.setItem("skipgc","t")}catch(e){}show()});show()})();
+</script>
 </main>
 <footer>
 <nav aria-label="Footer">

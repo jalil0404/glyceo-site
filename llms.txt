@@ -19,7 +19,7 @@ Glycéo is a nutrition information tool, not a medical device: it does not diagn
 Adults who want to understand how meals affect blood sugar: type 1 or type 2 diabetes, prediabetes, gestational diabetes, caregivers, or curious people. Minors should use it with a responsible adult and their doctor.
 
 ## Privacy
-No Glycéo server, no account, no ads, no analytics, no trackers. The only network request is a product lookup in Open Food Facts (barcode or search term, never personal or health data).
+The app has no Glycéo server, no account, no ads, no analytics and no trackers. The only network request is a product lookup in Open Food Facts (barcode or search term, never personal or health data). The glyceo.app website uses cookieless, anonymous visit counting (GoatCounter) and respects Do Not Track / Global Privacy Control.
 
 ## Pages
 - [Accueil (français)](https://glyceo.app/): présentation de l'app
