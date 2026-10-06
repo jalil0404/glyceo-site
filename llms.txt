@@ -1,30 +1,33 @@
-# Glycéo
+# Glyami
 
-> Glycéo is a free Android app (coming soon on Google Play) that scans food barcodes and shows the estimated glycemic index (GI) and the glycemic load (GL) for the portion you actually eat. No account, no ads, no in-app purchases; all personal data stays on the phone. Available in French, Arabic, English and Spanish. Mascot: Pépin, a friendly clay pea. Published by Neami Labs (France), contact@glyceo.app.
+> Glyami (formerly Glycéo) is a free Android app (coming soon on Google Play) that scans food barcodes and shows the estimated glycemic index (GI) and the glycemic load (GL) for the portion you actually eat. No account, no ads, no in-app purchases; data stays on the phone. Available in French, Arabic, English and Spanish. Publisher: Neami Labs (France).
 
-Glycéo is a nutrition information tool, not a medical device: it does not diagnose, does not calculate insulin or medication doses and does not replace a doctor or dietitian. GI values are estimates based on published scientific tables (e.g. Atkinson et al., International GI tables).
+Glyami is a nutrition information tool, not a medical device: it does not diagnose, does not calculate insulin or medication doses and does not replace a doctor or dietitian. GI values are estimates based on published tables (Atkinson et al. 2008 and 2021, University of Sydney database) and on the product's composition.
 
-## Features (V1.1)
+## Features
 - Scan: barcode lookup in an open food database; if a product is missing, the user can copy the label and it is still calculated.
 - Understand: estimated GI and GL per portion, shown with simple colours (low, moderate, high). GI low ≤ 55, moderate 56–69, high ≥ 70. GL = GI × carbohydrates of the portion (g) / 100.
-- Daily load: meals add up in a daily glycemic load gauge with a guide value of 80.
-- Shopping list ("Mes courses"): tile-based list of 500+ illustrated items sorted by store aisle, each with its estimated GI, seasonal fruit and vegetables, quick add, gentle swap ideas.
+- The recipe: a reading of the label in four tiles — Nutri-Score, Nova group, additives, then sugars or fibre depending on the product.
+- Compare and swap: compare two products in store; a compass places the product and gentler alternatives from the same aisle.
+- Daily load: meals add up in a daily glycemic load gauge with a guide value of 80, which the user can adjust.
 - My plate: estimates the glycemic load of a whole meal, not just one product.
-- Compare and swap: compare two products in store and find gentler alternatives from the same aisle.
+- Shopping lists: several tile-based lists of 500+ illustrated items sorted by store aisle, foods shown with their estimated GI; ready-made lists; the items left to buy can be sent by message or with a code to scan.
+- Meal ideas: simple dishes with their estimated load per serving; quantities follow the number of people and ingredients can be added to the shopping list. Carbohydrate averages come from the Ciqual 2025 table (Anses).
+- Loyalty cards: the code of a loyalty card is scanned once and shown again at the checkout; cards stay on the phone; the feature is meant for loyalty cards only, not bank cards.
 - Alerts: hidden sugars, allergies, pork-free, alcohol-free ingredient checks at every scan.
 - Did you know?: one true-or-false card a day about what raises blood sugar.
-- Personal log: scan and meal history, weight tracking with BMI shown on a WHO-zone gauge.
+- Tracking: scan and meal history, weight with BMI on a gauge, and a daily tick for the walk after a meal.
 
 ## Who it is for
-Adults who want to understand how meals affect blood sugar: type 1 or type 2 diabetes, prediabetes, gestational diabetes, caregivers, or curious people. Minors should use it with a responsible adult and their doctor.
+Adults who want to understand how meals affect blood sugar and choose their food more wisely, day to day. Minors should use it with a responsible adult.
 
 ## Privacy
-The app has no Glycéo server, no account, no ads, no analytics and no trackers. The only network request is a product lookup in Open Food Facts (barcode or search term, never personal or health data). The glyceo.app website uses cookieless, anonymous visit counting (GoatCounter) and respects Do Not Track / Global Privacy Control.
+The app has no Glyami server, no account, no ads, no analytics and no trackers. The only network requests go to Open Food Facts: product lookup, photos, alternatives and, only if the user chooses to, sharing the entry of an unknown product. Never personal or health data. Everything the user enters stays on the phone. The website uses an anonymous, cookieless visit counter.
 
 ## Pages
-- [Accueil (français)](https://glyceo.app/): présentation de l'app
-- [Home (English)](https://glyceo.app/en/): app overview
-- [Inicio (español)](https://glyceo.app/es/): presentación
-- [الصفحة الرئيسية (العربية)](https://glyceo.app/ar/): تقديم التطبيق
-- [Politique de confidentialité](https://glyceo.app/confidentialite.html) · [Privacy policy](https://glyceo.app/en/privacy.html)
-- [Conditions et mentions légales](https://glyceo.app/conditions.html) · [Terms](https://glyceo.app/en/terms.html)
+- [Accueil (français)](https://glyami.app/): présentation de l'app
+- [Home (English)](https://glyami.app/en/): app overview
+- [Inicio (español)](https://glyami.app/es/): presentación
+- [الصفحة الرئيسية (العربية)](https://glyami.app/ar/): تقديم التطبيق
+- [Politique de confidentialité](https://glyami.app/confidentialite.html) · [Privacy policy](https://glyami.app/en/privacy.html)
+- [Conditions et mentions légales](https://glyami.app/conditions.html) · [Terms](https://glyami.app/en/terms.html)

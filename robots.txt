@@ -56,4 +56,4 @@ Allow: /
 User-agent: MistralAI-User
 Allow: /
 
-Sitemap: https://glyceo.app/sitemap.xml
+Sitemap: https://glyami.app/sitemap.xml
