@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,17 +21,21 @@
 <meta property="og:url" content="https://glyami.app/en/privacy.html">
 <link rel="stylesheet" href="../assets/site.css">
 <script>
+document.documentElement.className="js";
 /* Mesure d'audience anonyme, sans cookie (GoatCounter). Rien n'est compté si le navigateur envoie Do Not Track / GPC ou si le visiteur a refusé. */
 (function(){try{if(navigator.doNotTrack==="1"||navigator.globalPrivacyControl||localStorage.getItem("skipgc")==="t")return}catch(e){}
 var s=document.createElement("script");s.async=true;s.src="https://gc.zgo.at/count.js";s.setAttribute("data-goatcounter","https://glyceo.goatcounter.com/count");document.head.appendChild(s)})();
 </script>
 </head>
 <body>
-<div class="wrap">
+<div class="bar"><div class="wrap">
 <header class="top">
-<a class="logo" href="../en/index.html" lang="fr"><img src="../assets/icon-180.png" alt="" width="40" height="40">Glyami</a>
-<nav class="langs" aria-label="Language"><a href="../confidentialite.html" hreflang="fr" lang="fr"><span class="full">Français</span><span class="short" aria-hidden="true">FR</span></a><a href="../en/privacy.html" hreflang="en" lang="en" aria-current="page"><span class="full">English</span><span class="short" aria-hidden="true">EN</span></a><a href="../es/privacidad.html" hreflang="es" lang="es"><span class="full">Español</span><span class="short" aria-hidden="true">ES</span></a><a href="../ar/privacy.html" hreflang="ar" lang="ar"><span class="full">العربية</span><span class="short" aria-hidden="true">ع</span></a></nav>
+<a class="logo" href="../en/index.html" lang="fr"><img src="../assets/icon-180.png" alt="" width="34" height="34">Glyami</a>
+<nav class="sections" aria-label="Sections"><a href="../en/index.html#courses">Shopping</a><a href="../en/index.html#fonctions">Features</a><a href="../en/method.html">Method</a><a href="../en/index.html#questions">Questions</a></nav>
+<nav class="langs" aria-label="Language"><a href="../confidentialite.html" hreflang="fr" lang="fr" title="Français">FR</a><a href="../en/privacy.html" hreflang="en" lang="en" title="English" aria-current="page">EN</a><a href="../es/privacidad.html" hreflang="es" lang="es" title="Español">ES</a><a href="../ar/privacy.html" hreflang="ar" lang="ar" title="العربية">ع</a></nav>
 </header>
+</div></div>
+<div class="wrap">
 <main>
 <article class="doc narrow">
 <h1>Privacy policy</h1>
@@ -41,16 +45,11 @@ var s=document.createElement("script");s.async=true;s.src="https://gc.zgo.at/cou
 <section class="part"><h2>Who publishes Glyami?</h2><p>Glyami is a free app published by Abdeljalil NEAMI, independent developer (Neami Labs), in France. For any question: <a href="mailto:contact@glyami.app">contact@glyami.app</a>. Glyami was called Glycéo until October 2026.</p></section><section class="part"><h2>The data you enter in the app</h2><p>Depending on what you choose to fill in, the app may store:</p><ul><li>your profile: first name, date of birth, height, weight, language, text size and daily load guide (and, if your version offers blood glucose tracking, your situation and your unit of measurement);</li><li>health information you record yourself: weight, waist size, meals, walking days and, if your version offers blood glucose tracking, blood glucose, HbA1c and personal tests;</li><li>your loyalty cards: the name you give them, their code and, if you choose to, their photo;</li><li>your shopping lists and your purchases;</li><li>your saved plates, your answers to the “Did you know?” cards and the products you copy from their label;</li><li>the history of scanned products and your alert preferences (allergies, food choices).</li></ul><p>Everything is optional. This data is stored <strong>only in your phone's memory</strong>. There is no Glyami server: we do not receive it, see it or have any way to access it.</p><p>Some of this information is health data, which the law gives special protection. It is processed only on your device, under your sole control.</p></section><section class="part"><h2>What goes over the Internet</h2><p>When you scan a product or search, the app queries <strong>Open Food Facts</strong>, an open and collaborative food database. The request contains only:</p><ul><li>the barcode or the search term;</li><li>for the “smart swap” (less sugary alternatives): the Open Food Facts category of the product shown and, if your phone is set to one of the supported countries, that country's code (taken from your phone's region setting, not your location);</li><li>the app's name and version, with a contact address, as required by Open Food Facts.</li></ul><p>No profile data or readings are sent. As with any connection, your IP address is visible to Open Food Facts servers, which use it according to <a href="https://world.openfoodfacts.org/privacy" rel="noopener">their own privacy policy</a>. Product photos are loaded from their image servers.</p><p><strong>Unknown product.</strong> If a product isn't in Open Food Facts, you can copy its label into the app: the entry stays on your phone. If your version offers it and you choose to share it, the app sends Open Food Facts only the product information (barcode, name, brand, nutrition values, ingredients, language of the entry). Nothing about you. This information becomes public under the ODbL licence. With no connection, the upload waits on your phone.</p><p>Products you look up are kept on your phone so you can see them again offline.</p><p>Meal ideas, shopping lists, loyalty cards and all calculations work without any connection.</p></section><section class="part"><h2>Permissions requested</h2><ul><li><strong>Camera</strong>: to read barcodes and, if you choose to, take a photo of your loyalty card. Codes are read live; the photo of a card stays on your phone. Nothing is sent.</li><li><strong>Notifications</strong>: only if your version offers reminders and you turn them on. They are scheduled on your phone, without any server.</li></ul><p>You can revoke these permissions at any time in your phone's settings.</p></section><section class="part"><h2>When you share something</h2><p>You can create a PDF report, a share card, a backup file, an invitation message or send a shopping list (as a message, or as a code to scan). They are created on your phone and only leave it if you choose a destination app yourself (messaging, email, storage…), or if you show the code yourself. What you send is then subject to the rules of that app and of your recipient.</p><p>If you write to us from “An idea, an issue?”, the message leaves from your own email app: we receive your email address, your message and one technical line (app version, phone model, system version, language). They are used to answer you and to improve the app.</p></section><section class="part"><h2>Phone backup</h2><p>Glyami asks Android not to include its data in the automatic backup of your Google account. To move to a new phone, use the app's own backup (<em>Settings → My data</em>): you get a file that you keep and restore yourself. The photos of your cards are not in it, and the file is not encrypted: keep it somewhere safe.</p></section><section class="part"><h2>What we don&#x27;t do</h2><ul><li>No account or sign-up.</li><li>In the app: no advertising, no analytics, no trackers.</li><li>No third-party data collection or analytics tools in the app.</li><li>No selling, renting or sharing of data.</li></ul></section><section class="part"><h2>Retention and deletion</h2><p>Your data stays on your phone for as long as you keep it. You can edit it, export it or erase everything from <em>Settings → Erase all my data</em>. Uninstalling the app also deletes its data, except files you have exported.</p></section><section class="part"><h2>Your rights</h2><p>The GDPR gives you in particular the rights of access, rectification, erasure and portability. Apart from the emails you write to us, we hold no data about you: you exercise these rights directly in the app (view, edit, export, erase). For any question, write to <a href="mailto:contact@glyami.app">contact@glyami.app</a>. You may also lodge a complaint with your data protection authority (in France, the CNIL: <a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>).</p></section><section class="part"><h2>Who the app is for</h2><p>Glyami is intended for adults. A minor must use it with a responsible adult and with their doctor.</p></section><section class="part"><h2>This website</h2><p>The glyami.app website is hosted by GitHub Pages (GitHub, Inc.). It uses no cookies and no advertising. The host may keep technical logs (including IP addresses) for security, according to <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">its privacy statement</a>.</p><p><strong>Visit statistics.</strong> To know how many people visit the site and where they come from, we use <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a>, an open-source tool with no cookies. It counts the page viewed, the site you came from, the language, the browser and device type, and the country derived from your IP address. Your IP address is not stored and no identifier follows you from one visit to the next: we only see totals. If your browser sends a “Do Not Track” or “Global Privacy Control” signal, nothing is counted.</p><p><button type="button" class="btn" id="gc-optout" data-off="Stop counting my visits" data-on="Count my visits again">Stop counting my visits</button></p><p>This choice is kept in your browser, with no cookie.</p><p>The former address glyceo.app redirects to this site.</p></section><section class="part"><h2>Changes</h2><p>If this policy changes, we will update this page and the date below. Any significant change will also be announced in the app.</p></section>
 <a class="back" href="../en/index.html">← Back to home</a>
 </article>
-<script>
-(function(){var b=document.getElementById("gc-optout");if(!b)return;
-function on(){try{return localStorage.getItem("skipgc")==="t"}catch(e){return false}}
-function show(){b.textContent=on()?b.dataset.on:b.dataset.off}
-b.addEventListener("click",function(){try{on()?localStorage.removeItem("skipgc"):localStorage.setItem("skipgc","t")}catch(e){}show()});show()})();
-</script>
 </main>
 <footer>
 <nav aria-label="Footer">
 <a href="../en/index.html">Home</a>
+<a href="../en/method.html">Method</a>
 <a href="../en/privacy.html">Privacy</a>
 <a href="../en/terms.html">Terms and legal notice</a>
 <a href="mailto:contact@glyami.app">Contact · contact@glyami.app</a>
@@ -59,5 +58,9 @@ b.addEventListener("click",function(){try{on()?localStorage.removeItem("skipgc")
 <div>© 2026 An app by Neami Labs</div>
 </footer>
 </div>
+<script>(function(){var b=document.getElementById("gc-optout");if(!b)return;
+function on(){try{return localStorage.getItem("skipgc")==="t"}catch(e){return false}}
+function show(){b.textContent=on()?b.dataset.on:b.dataset.off}
+b.addEventListener("click",function(){try{on()?localStorage.removeItem("skipgc"):localStorage.setItem("skipgc","t")}catch(e){}show()});show()})();</script>
 </body>
 </html>

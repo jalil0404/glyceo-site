@@ -29,5 +29,6 @@ The app has no Glyami server, no account, no ads, no analytics and no trackers. 
 - [Home (English)](https://glyami.app/en/): app overview
 - [Inicio (español)](https://glyami.app/es/): presentación
 - [الصفحة الرئيسية (العربية)](https://glyami.app/ar/): تقديم التطبيق
+- [Comment Pépin calcule](https://glyami.app/methode.html) · [How Pépin calculates](https://glyami.app/en/method.html): method, sources and limits
 - [Politique de confidentialité](https://glyami.app/confidentialite.html) · [Privacy policy](https://glyami.app/en/privacy.html)
 - [Conditions et mentions légales](https://glyami.app/conditions.html) · [Terms](https://glyami.app/en/terms.html)

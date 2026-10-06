@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr" dir="ltr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comment Pépin calcule — Glyami</title>
+<meta name="description" content="D&#x27;où viennent l&#x27;index et la charge glycémiques affichés par Glyami, comment ils sont estimés, et ce qu&#x27;ils ne disent pas.">
+<meta name="theme-color" content="#1E4A3A">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://glyami.app/methode.html">
+<link rel="alternate" hreflang="fr" href="https://glyami.app/methode.html"><link rel="alternate" hreflang="en" href="https://glyami.app/en/method.html"><link rel="alternate" hreflang="es" href="https://glyami.app/es/metodo.html"><link rel="alternate" hreflang="ar" href="https://glyami.app/ar/method.html"><link rel="alternate" hreflang="x-default" href="https://glyami.app/methode.html">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta property="og:title" content="Comment Pépin calcule — Glyami">
+<meta property="og:description" content="D&#x27;où viennent l&#x27;index et la charge glycémiques affichés par Glyami, comment ils sont estimés, et ce qu&#x27;ils ne disent pas.">
+<meta property="og:image" content="https://glyami.app/assets/og.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Glyami">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://glyami.app/methode.html">
+<link rel="stylesheet" href="assets/site.css">
+<script>
+document.documentElement.className="js";
+/* Mesure d'audience anonyme, sans cookie (GoatCounter). Rien n'est compté si le navigateur envoie Do Not Track / GPC ou si le visiteur a refusé. */
+(function(){try{if(navigator.doNotTrack==="1"||navigator.globalPrivacyControl||localStorage.getItem("skipgc")==="t")return}catch(e){}
+var s=document.createElement("script");s.async=true;s.src="https://gc.zgo.at/count.js";s.setAttribute("data-goatcounter","https://glyceo.goatcounter.com/count");document.head.appendChild(s)})();
+</script>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+<header class="top">
+<a class="logo" href="index.html" lang="fr"><img src="assets/icon-180.png" alt="" width="34" height="34">Glyami</a>
+<nav class="sections" aria-label="Sections"><a href="index.html#courses">Courses</a><a href="index.html#fonctions">Fonctions</a><a href="methode.html" aria-current="page">Méthode</a><a href="index.html#questions">Questions</a></nav>
+<nav class="langs" aria-label="Langue"><a href="methode.html" hreflang="fr" lang="fr" title="Français" aria-current="page">FR</a><a href="en/method.html" hreflang="en" lang="en" title="English">EN</a><a href="es/metodo.html" hreflang="es" lang="es" title="Español">ES</a><a href="ar/method.html" hreflang="ar" lang="ar" title="العربية">ع</a></nav>
+</header>
+</div></div>
+<div class="wrap">
+<main>
+<article class="method narrow">
+<h1>Comment Pépin calcule</h1>
+<p class="lead">Deux chiffres, pas plus : l&#x27;index dit à quelle vitesse, la charge dit combien.</p>
+<section class="calc" id="calc" aria-labelledby="t-calc" data-says="[&quot;Petite charge. Tout doux.&quot;, &quot;Charge modérée.&quot;, &quot;Charge élevée. Une plus petite portion ?&quot;]" data-levels="[&quot;basse&quot;, &quot;modérée&quot;, &quot;élevée&quot;]" data-dec=",">
+ <h2 id="t-calc">Essaie avec ta portion</h2>
+ <p>Choisis un aliment, puis fais glisser la quantité.</p>
+ <div class="foods" role="group" aria-label="Aliment"><button type="button" aria-pressed="true" data-ig="28" data-c="15.0" data-g="150">Pois chiches en conserve, égouttés</button><button type="button" aria-pressed="false" data-ig="58" data-c="78.4" data-g="60">Riz basmati, pesé cru</button><button type="button" aria-pressed="false" data-ig="78" data-c="16.2" data-g="200">Pommes de terre, pesées crues</button></div>
+ <label for="portion"><span>Ta portion</span><span class="num"><span id="o-g">150</span> g</span></label>
+ <input id="portion" type="range" min="20" max="300" step="10" value="150">
+ <div class="outs" aria-live="polite">
+  <div><div class="k">Index glycémique estimé</div><div class="num" id="o-ig">28</div><small>Il ne change pas avec la quantité.</small></div>
+  <div><div class="k">Glucides de ta portion</div><div class="num"><span id="o-carbs">23</span> g</div><small><span id="o-c">15</span> g pour 100 g.</small></div>
+  <div class="result"><div class="k">Charge glycémique</div><div class="num" id="o-load">6</div><small id="o-level">basse</small><div class="meter"><span id="o-meter" style="width:15%"></span></div></div>
+ </div>
+ <p class="say" id="o-say">Petite charge. Tout doux.</p>
+ <p class="fine">Charge = index × glucides de la portion ÷ 100. Index tirés de la table de référence de l&#x27;app, glucides de la table Ciqual 2025 ; résultats arrondis.</p>
+</section>
+<div class="two">
+ <div><h2>L&#x27;index glycémique</h2><p>À quelle vitesse un aliment contenant des glucides fait monter la glycémie, comparé au glucose pur (100).</p><ul class="bands"><li><span style="background:#9CC0A0"></span>Bas : jusqu&#x27;à 55</li><li><span style="background:#F2C96B"></span>Moyen : 56 à 69</li><li><span style="background:#F2A58F"></span>Élevé : 70 et plus</li></ul></div>
+ <div><h2>La charge glycémique</h2><p>Elle tient compte de la quantité que tu manges vraiment. Un aliment à index élevé peut avoir une petite charge si la portion est modeste. Elle est dite basse jusqu&#x27;à 10 et élevée à partir de 20. Glyami l&#x27;additionne sur la journée, avec un repère de 80 que tu peux régler.</p></div>
+</div>
+<section class="sources" aria-labelledby="t-src">
+ <h2 id="t-src">D&#x27;où viennent les chiffres</h2>
+ <div><strong>Index glycémiques.</strong> Estimés à partir de tables publiées (Atkinson et al., 2008 et 2021 ; base de l&#x27;université de Sydney) et de la composition du produit.</div><div><strong>Produits et additifs.</strong> Noms, valeurs nutritionnelles, ingrédients, Nutri-Score, Nova et additifs viennent d&#x27;Open Food Facts. Données sous licence ODbL, photos sous licence CC BY-SA.</div><div><strong>Glucides des idées repas.</strong> Table de composition nutritionnelle des aliments Ciqual 2025 de l&#x27;Anses, réutilisée sous Licence Ouverte 2.0. L&#x27;Anses n&#x27;a ni relu ni approuvé Glyami.</div>
+ <p>Ces valeurs sont des estimations : ta réponse réelle peut être différente. Glyami n&#x27;est pas un dispositif médical.</p>
+</section>
+<a class="back" href="index.html">← Retour à l&#x27;accueil</a>
+</article>
+</main>
+<footer>
+<nav aria-label="Footer">
+<a href="index.html">Accueil</a>
+<a href="methode.html">Méthode</a>
+<a href="confidentialite.html">Confidentialité</a>
+<a href="conditions.html">Conditions et mentions légales</a>
+<a href="mailto:contact@glyami.app">Contact · contact@glyami.app</a>
+</nav>
+<div>Données produits © contributeurs Open Food Facts, licence ODbL · Photos CC BY-SA</div>
+<div>© 2026 Une app Neami Labs</div>
+</footer>
+</div>
+<script>(function(){var d=document,box=d.getElementById("calc");if(!box)return;
+var fs=[].slice.call(box.querySelectorAll(".foods button")),r=d.getElementById("portion"),cur=fs[0];
+var says=JSON.parse(box.getAttribute("data-says")),lv=JSON.parse(box.getAttribute("data-levels")),tones=["#9CC0A0","#F2C96B","#F2A58F"];
+function set(id,v){d.getElementById(id).textContent=v}
+function draw(){var ig=+cur.getAttribute("data-ig"),c=+cur.getAttribute("data-c"),g=+r.value,carbs=c*g/100,load=Math.round(ig*carbs/100),k=load<=10?0:load>=20?2:1;
+set("o-g",g);set("o-ig",ig);set("o-carbs",Math.round(carbs));set("o-c",String(c).replace(".",box.getAttribute("data-dec")));set("o-load",load);set("o-level",lv[k]);set("o-say",says[k]);
+var m=d.getElementById("o-meter");m.style.width=Math.min(100,load/40*100)+"%";m.style.background=tones[k]}
+fs.forEach(function(b){b.addEventListener("click",function(){cur=b;fs.forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});r.value=b.getAttribute("data-g");draw()})});
+r.addEventListener("input",draw);draw()})();</script>
+</body>
+</html>

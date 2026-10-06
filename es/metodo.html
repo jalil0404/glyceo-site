@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo calcula Pépin — Glyami</title>
+<meta name="description" content="De dónde salen el índice y la carga glucémicos que muestra Glyami, cómo se estiman y lo que no dicen.">
+<meta name="theme-color" content="#1E4A3A">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://glyami.app/es/metodo.html">
+<link rel="alternate" hreflang="fr" href="https://glyami.app/methode.html"><link rel="alternate" hreflang="en" href="https://glyami.app/en/method.html"><link rel="alternate" hreflang="es" href="https://glyami.app/es/metodo.html"><link rel="alternate" hreflang="ar" href="https://glyami.app/ar/method.html"><link rel="alternate" hreflang="x-default" href="https://glyami.app/methode.html">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<meta property="og:title" content="Cómo calcula Pépin — Glyami">
+<meta property="og:description" content="De dónde salen el índice y la carga glucémicos que muestra Glyami, cómo se estiman y lo que no dicen.">
+<meta property="og:image" content="https://glyami.app/assets/og.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Glyami">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://glyami.app/es/metodo.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script>
+document.documentElement.className="js";
+/* Mesure d'audience anonyme, sans cookie (GoatCounter). Rien n'est compté si le navigateur envoie Do Not Track / GPC ou si le visiteur a refusé. */
+(function(){try{if(navigator.doNotTrack==="1"||navigator.globalPrivacyControl||localStorage.getItem("skipgc")==="t")return}catch(e){}
+var s=document.createElement("script");s.async=true;s.src="https://gc.zgo.at/count.js";s.setAttribute("data-goatcounter","https://glyceo.goatcounter.com/count");document.head.appendChild(s)})();
+</script>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+<header class="top">
+<a class="logo" href="../es/index.html" lang="fr"><img src="../assets/icon-180.png" alt="" width="34" height="34">Glyami</a>
+<nav class="sections" aria-label="Secciones"><a href="../es/index.html#courses">Compra</a><a href="../es/index.html#fonctions">Funciones</a><a href="../es/metodo.html" aria-current="page">Método</a><a href="../es/index.html#questions">Preguntas</a></nav>
+<nav class="langs" aria-label="Idioma"><a href="../methode.html" hreflang="fr" lang="fr" title="Français">FR</a><a href="../en/method.html" hreflang="en" lang="en" title="English">EN</a><a href="../es/metodo.html" hreflang="es" lang="es" title="Español" aria-current="page">ES</a><a href="../ar/method.html" hreflang="ar" lang="ar" title="العربية">ع</a></nav>
+</header>
+</div></div>
+<div class="wrap">
+<main>
+<article class="method narrow">
+<h1>Cómo calcula Pépin</h1>
+<p class="lead">Dos cifras, nada más: el índice dice a qué velocidad, la carga dice cuánto.</p>
+<section class="calc" id="calc" aria-labelledby="t-calc" data-says="[&quot;Carga pequeña. Muy suave.&quot;, &quot;Carga moderada.&quot;, &quot;Carga alta. ¿Una porción más pequeña?&quot;]" data-levels="[&quot;baja&quot;, &quot;moderada&quot;, &quot;alta&quot;]" data-dec=",">
+ <h2 id="t-calc">Prueba con tu porción</h2>
+ <p>Elige un alimento y desliza la cantidad.</p>
+ <div class="foods" role="group" aria-label="Alimento"><button type="button" aria-pressed="true" data-ig="28" data-c="15.0" data-g="150">Garbanzos en conserva, escurridos</button><button type="button" aria-pressed="false" data-ig="58" data-c="78.4" data-g="60">Arroz basmati, pesado en crudo</button><button type="button" aria-pressed="false" data-ig="78" data-c="16.2" data-g="200">Patatas, pesadas en crudo</button></div>
+ <label for="portion"><span>Tu porción</span><span class="num"><span id="o-g">150</span> g</span></label>
+ <input id="portion" type="range" min="20" max="300" step="10" value="150">
+ <div class="outs" aria-live="polite">
+  <div><div class="k">Índice glucémico estimado</div><div class="num" id="o-ig">28</div><small>No cambia con la cantidad.</small></div>
+  <div><div class="k">Hidratos de tu porción</div><div class="num"><span id="o-carbs">23</span> g</div><small><span id="o-c">15</span> g por 100 g.</small></div>
+  <div class="result"><div class="k">Carga glucémica</div><div class="num" id="o-load">6</div><small id="o-level">baja</small><div class="meter"><span id="o-meter" style="width:15%"></span></div></div>
+ </div>
+ <p class="say" id="o-say">Carga pequeña. Muy suave.</p>
+ <p class="fine">Carga = índice × hidratos de la porción ÷ 100. Índices de la tabla de referencia de la app, hidratos de la tabla Ciqual 2025; resultados redondeados.</p>
+</section>
+<div class="two">
+ <div><h2>El índice glucémico</h2><p>Con qué rapidez un alimento con hidratos de carbono eleva la glucemia, comparado con la glucosa pura (100).</p><ul class="bands"><li><span style="background:#9CC0A0"></span>Bajo: hasta 55</li><li><span style="background:#F2C96B"></span>Medio: 56 a 69</li><li><span style="background:#F2A58F"></span>Alto: 70 o más</li></ul></div>
+ <div><h2>La carga glucémica</h2><p>Tiene en cuenta la cantidad que realmente comes. Un alimento de índice alto puede tener una carga pequeña si la porción es pequeña. Se considera baja hasta 10 y alta a partir de 20. Glyami la suma a lo largo del día, con una referencia de 80 que puedes ajustar.</p></div>
+</div>
+<section class="sources" aria-labelledby="t-src">
+ <h2 id="t-src">De dónde salen las cifras</h2>
+ <div><strong>Índices glucémicos.</strong> Estimados a partir de tablas publicadas (Atkinson et al., 2008 y 2021; base de datos de la Universidad de Sídney) y de la composición del producto.</div><div><strong>Productos y aditivos.</strong> Nombres, valores nutricionales, ingredientes, Nutri-Score, Nova y aditivos proceden de Open Food Facts. Datos con licencia ODbL, fotos con licencia CC BY-SA.</div><div><strong>Hidratos de las ideas de comidas.</strong> Tabla de composición nutricional de los alimentos Ciqual 2025 de la Anses, reutilizada bajo la Licence Ouverte 2.0. La Anses no ha revisado ni aprobado Glyami.</div>
+ <p>Estos valores son estimaciones: tu respuesta real puede ser diferente. Glyami no es un producto sanitario.</p>
+</section>
+<a class="back" href="../es/index.html">← Volver al inicio</a>
+</article>
+</main>
+<footer>
+<nav aria-label="Footer">
+<a href="../es/index.html">Inicio</a>
+<a href="../es/metodo.html">Método</a>
+<a href="../es/privacidad.html">Privacidad</a>
+<a href="../es/condiciones.html">Condiciones y aviso legal</a>
+<a href="mailto:contact@glyami.app">Contacto · contact@glyami.app</a>
+</nav>
+<div>Datos de productos © colaboradores de Open Food Facts, licencia ODbL · Fotos CC BY-SA</div>
+<div>© 2026 Una app de Neami Labs</div>
+</footer>
+</div>
+<script>(function(){var d=document,box=d.getElementById("calc");if(!box)return;
+var fs=[].slice.call(box.querySelectorAll(".foods button")),r=d.getElementById("portion"),cur=fs[0];
+var says=JSON.parse(box.getAttribute("data-says")),lv=JSON.parse(box.getAttribute("data-levels")),tones=["#9CC0A0","#F2C96B","#F2A58F"];
+function set(id,v){d.getElementById(id).textContent=v}
+function draw(){var ig=+cur.getAttribute("data-ig"),c=+cur.getAttribute("data-c"),g=+r.value,carbs=c*g/100,load=Math.round(ig*carbs/100),k=load<=10?0:load>=20?2:1;
+set("o-g",g);set("o-ig",ig);set("o-carbs",Math.round(carbs));set("o-c",String(c).replace(".",box.getAttribute("data-dec")));set("o-load",load);set("o-level",lv[k]);set("o-say",says[k]);
+var m=d.getElementById("o-meter");m.style.width=Math.min(100,load/40*100)+"%";m.style.background=tones[k]}
+fs.forEach(function(b){b.addEventListener("click",function(){cur=b;fs.forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});r.value=b.getAttribute("data-g");draw()})});
+r.addEventListener("input",draw);draw()})();</script>
+</body>
+</html>
