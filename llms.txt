@@ -1,6 +1,6 @@
 # Glyami
 
-> Glyami (formerly Glycéo) is a free Android app (coming soon on Google Play) that scans food barcodes and shows the estimated glycemic index (GI) and the glycemic load (GL) for the portion you actually eat. No account, no ads, no in-app purchases; data stays on the phone. Available in French, Arabic, English and Spanish. Publisher: Neami Labs (France).
+> Glyami (formerly Glycéo) is a free Android app (coming soon on Google Play) that scans food barcodes and shows the estimated glycemic index (GI) and the glycemic load (GL) for the portion you actually eat. No account, no ads, no in-app purchases; data stays on the phone. Available in French, Arabic, English and Spanish. Publisher: Abdeljalil NEAMI, individual, non-professional (France).
 
 Glyami is a nutrition information tool, not a medical device: it does not diagnose, does not calculate insulin or medication doses and does not replace a doctor or dietitian. GI values are estimates based on published tables (Atkinson et al. 2008 and 2021, University of Sydney database) and on the product's composition.
 
