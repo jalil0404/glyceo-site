@@ -230,16 +230,66 @@ footer nav a{color:var(--ink);font-weight:700}
 .sources p{margin:22px 0 0;font-weight:700}
 
 /* pages légales */
-.doc h1{font-size:clamp(32px,4.6vw,46px);line-height:1.1;letter-spacing:-1px;margin:40px 0 8px}
-.doc .meta{color:var(--ink-soft);font-size:15px;margin:0 0 20px}
+.doc h1{font-size:clamp(30px,4.4vw,44px);line-height:1.12;letter-spacing:-1px;margin:40px 0 12px;color:var(--ink)}
+.doc h1::before{content:"";display:block;width:56px;height:56px;margin-bottom:16px;border-radius:15px;background:url("icon-180.png") center/contain no-repeat;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.doc h1 .say{color:var(--green);font-weight:600}
+.doc .meta{display:inline-block;background:var(--green);color:#fff;border-radius:999px;padding:5px 14px;font-size:14px;font-weight:600;margin:0 0 20px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.legal-history{background:var(--card);border-radius:24px;padding:6px 22px 14px;margin:14px 0}
+.legal-history ul{list-style:none;margin:0;padding:0}
+.legal-history li{padding:12px 0;border-top:1px solid var(--line)}
+.legal-history li:first-child{border-top:0}
+.legal-history code{font-size:13px;word-break:break-all;color:var(--ink-soft)}
+.legal-history .small{color:var(--ink-soft);font-size:14px;margin:4px 0 0}
 .box{border-radius:24px;padding:20px 22px;margin:20px 0}
 .box h2{margin:0 0 8px;font-size:21px;line-height:1.2;letter-spacing:-.2px}
 .box.sage{background:var(--sage)}
 .box.coral{background:var(--coral);color:#3d1509}
+.codebox{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:22px;font-weight:700;letter-spacing:.5px;word-break:break-all;direction:ltr;text-align:start;margin:8px 0}
 .box ul{margin:0;padding-inline-start:20px}
 .doc section.part{background:var(--card);border-radius:24px;padding:6px 22px 10px;margin:14px 0}
 .doc section.part h2{font-size:21px;line-height:1.2;margin:16px 0 6px;letter-spacing:-.2px}
-.doc section.part p,.doc section.part li{color:#2b3d36;font-size:17px}
+.doc section.part p,.doc section.part li{color:#2b3d36;font-size:16px;line-height:1.6;max-width:70ch}
+.doc section.part ul{padding-inline-start:1.3em;margin:8px 0}
+.doc section.part{scroll-margin-top:90px}
+.doc section.part h2 .anum{display:inline-block;background:var(--sage);color:var(--green);border-radius:10px;padding:1px 10px;margin:0 2px;font-size:.9em;line-height:1.4;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.legal-card{background:var(--bg);border:1.5px solid var(--line);border-radius:16px;padding:12px 18px;line-height:1.95;max-width:none!important}
+.legal-card strong{color:var(--green)}
+.legal-aside{margin:6px 0 10px}
+.legal-aside .ess{background:var(--sage);border-radius:24px;padding:20px 22px;margin:14px 0}
+.legal-aside .ess h2{margin:0 0 8px;font-size:21px;line-height:1.2;letter-spacing:-.2px}
+.legal-aside .ess ul{margin:0;padding-inline-start:20px}
+.legal-aside .ess li{margin:4px 0;max-width:70ch}
+.legal-aside .ess p{margin:10px 0 0;font-size:14px;color:var(--sage-fg)}
+.toc{background:var(--card);border-radius:24px;padding:14px 22px 16px;margin:14px 0}
+.toc h2{font-size:19px;line-height:1.2;margin:4px 0 8px;letter-spacing:-.2px}
+.toc ol{list-style:none;margin:0;padding:0;columns:2 270px;column-gap:28px}
+.toc li{break-inside:avoid}
+.toc a{display:block;padding:5px 0;color:var(--ink);text-decoration:none;font-size:15px;line-height:1.35}
+.toc a:hover,.toc a:focus-visible{color:var(--green);text-decoration:underline}
+.pdfbtn{display:none;margin:6px 0 4px}
+.js .pdfbtn{display:inline-flex}
+@page{size:A4;margin:18mm}
+@media print{
+html,body{background:#fff!important;color:#000}
+body{font-size:11pt;line-height:1.5}
+.bar,footer,.back,.pdfbtn,.langs,nav.crumbs,.crumbs{display:none!important}
+.wrap{max-width:none;padding:0}
+.doc,.narrow{max-width:none}
+.doc h1{font-size:22pt;margin:0 0 4mm;break-after:avoid}
+.doc .meta{font-size:9.5pt}
+.doc section.part,.toc,.legal-aside .ess,.box,.legal-history{background:none;border-radius:0;padding:0;margin:0 0 5mm;box-shadow:none}
+.legal-aside .ess,.box,.toc{border:.3mm solid #1E4A3A;border-radius:3mm;padding:3mm 4mm}
+.doc section.part h2,.toc h2,.legal-aside .ess h2,.box h2{font-size:13pt;line-height:1.25;break-after:avoid;break-inside:avoid;margin:5mm 0 2mm}
+.doc section.part p,.doc section.part li,.legal-aside .ess li,.box p,.box li{font-size:11pt;line-height:1.5;max-width:none;color:#000;orphans:3;widows:3}
+.doc section.part p,.doc section.part li,.legal-card,.legal-aside .ess,.box,.toc li{break-inside:avoid}
+.toc ol{columns:2;column-gap:10mm}
+.toc a,.toc a:hover{font-size:10pt;padding:1mm 0}
+.legal-card{border:.3mm solid #999;padding:3mm 4mm;line-height:1.7}
+a,a:visited{color:inherit;text-decoration:none}
+.doc a[href^="http"]::after{content:" (" attr(href) ")";font-size:.88em;color:#333;word-break:break-all}
+.toc a::after{content:none!important}
+.legal-history .small,.legal-history code{font-size:9pt}
+}
 .doc .trans{font-size:14px;color:var(--ink-soft);font-style:italic}
 .doc .btn{min-height:52px}
 .back{display:inline-block;margin-top:14px;font-weight:700}
