@@ -1,0 +1,26 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.glyami",
+      "sha256_cert_fingerprints": [
+        "27:E8:90:2F:6C:EA:31:9F:C7:83:A6:50:37:78:DA:9A:02:16:B1:1F:7D:2A:F6:DE:6D:3E:1E:86:FB:8C:70:A8"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.glyami.dev",
+      "sha256_cert_fingerprints": [
+        "34:BE:E8:B7:D6:AD:D1:A3:50:0F:04:29:F5:F7:B2:A1:9A:00:0F:7D:06:DA:16:44:F4:D5:EF:DD:A8:55:5D:C8"
+      ]
+    }
+  }
+]
